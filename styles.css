@@ -21,7 +21,7 @@ p {
   display: flex;
   justify-content: space-between;
 }
-.top-purple-left{
+.top-purple-left {
   display: flex;
   align-items: center;
 }
@@ -31,11 +31,11 @@ p {
 .top-purple-right {
   display: flex;
 }
-.findOutMore{
+.findOutMore {
   color: #fff;
   font-weight: 400;
-font-size: 14px;
-line-height: 19px;
+  font-size: 14px;
+  line-height: 19px;
 }
 .top-purple-right span {
   color: #ffc42d;
@@ -63,11 +63,11 @@ nav {
   align-items: center;
   text-align: center;
 }
-.talkToExpert{
+.talkToExpert {
   font-weight: 400;
-font-size: 14px;
-line-height: 19px;
-color: #FFFFFF;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
 }
 .nav-left span {
   font-weight: 600;
@@ -115,7 +115,7 @@ color: #FFFFFF;
 }
 .header-info p {
   font-weight: lighter;
-  font-size: 66px;
+  font-size: 4.125rem;
   line-height: 154.7%;
   color: #ffffff;
 }
@@ -146,7 +146,7 @@ form {
   font-weight: 600;
   margin-bottom: 24px;
 }
-input::placeholder{
+input::placeholder {
   padding-left: 20px;
 }
 .forgot-pass {
@@ -179,6 +179,7 @@ input::placeholder{
 .sub-hero {
   margin-top: 92px;
 }
+/* About section */
 .about {
   display: flex;
   justify-content: space-between;
@@ -371,7 +372,7 @@ h2 {
   border: none;
   color: #fff;
 }
-.video{
+.video {
   margin-top: 100px;
   background-image: url("/assets/clouds-daytime-equipment-129544\ 1.png");
   background-size: cover;
@@ -382,41 +383,39 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
-
 }
-.video div{
- height: 300px;
- display: flex;
- flex-direction: column;
- justify-content: space-between;
+.video div {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.video span{
+.video span {
   font-weight: 600;
-font-size: 40px;
-line-height: 154.7%;
-color: #FFFFFF;
+  font-size: 40px;
+  line-height: 154.7%;
+  color: #ffffff;
 }
-.video p{
-  color: #FFFFFF;
+.video p {
+  color: #ffffff;
   font-weight: 700;
 }
-.video-purple{
-width: 100%;
-height: 370px;
-position: absolute;
-top: 4468px;
-left:71px;
-background: rgba(119, 45, 139, 0.2);
+.video-purple {
+  width: 100%;
+  height: 370px;
+  position: absolute;
+  top: 4468px;
+  left: 71px;
+  background: rgba(119, 45, 139, 0.2);
 }
 
 /* Our Clients section */
-.our-clients{
+.our-clients {
   text-align: center;
   margin-top: 50px;
   padding: 20px;
 }
-.our-clients figure{
+.our-clients figure {
   background-image: url("/assets/clients-list.svg");
   background-size: cover;
   height: 120px;
@@ -425,54 +424,172 @@ background: rgba(119, 45, 139, 0.2);
 }
 
 /* footer section */
-footer{
+footer {
   margin-top: 150px;
   padding: 50px;
   background: #333333;
 }
-.footer-top{
+.footer-top {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
 }
-.footer-top span{
-font-weight: 600;
-font-size: 18px;
-line-height: 154.7%;
-color: #FFFFFF;
+.footer-top span {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 154.7%;
+  color: #ffffff;
 }
-.footer-top p{
+.footer-top p {
   color: #fff;
-  
 }
-.aboutCompanyInfo{
+.aboutCompanyInfo {
   width: 273px;
 }
-.footerInformation p, .contactInfo div,.aboutCompanyInfo{
+.footerInformation p,
+.contactInfo div,
+.aboutCompanyInfo {
   margin: 15px 0;
 }
-.contactInfoContainers{
+.contactInfoContainers {
   display: flex;
 }
-.contactInfoContainers figure{
+.contactInfoContainers figure {
   margin-right: 10px;
 }
 
-.recentNews div span{
-display: block;
-font-weight: 400;
-font-size: 14px;
+.recentNews div span {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
 }
 
-.recentNews div{
+.recentNews div {
   padding: 20px 0;
   border-bottom: 2px solid #fff;
 }
 
-.footer-bottom{
+.footer-bottom {
   padding: 12px 0;
   text-align: center;
   background-color: #fff;
+}
+/* hurmburger icon  */
+nav a.icon{
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 75px;
 
 }
 
+@media screen and (max-width:480px) {
+  nav a.icon{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    color: #fff;
+  
+  }
+  body{
+    overflow-x: hidden;
+  }
+  nav{
+    width: 100%;
+    display: block;
+  }
+  .nav-left{
+    display: block;
+  }
+  .nav-right{
+    display: block;
+  }
+  .nav-links{
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .sub-hero{
+    display: block;
+    padding: 0 20px;
+    margin-top: 0px;
+  }
+  .header-info span{
+    font-size: 40px;
+  }
+  .header-info p{
+    width: 100%;
+    font-size: 20px;
+  }
+  .header-forms{
+    width: 100%;
+  }
+  .about{
+    width: 100%;
+    display: block;
+    padding: 0 20px;
+  }
+  .about p{
+    width: 100%;
+  }
+  .about-right{
+    width: 100%;
+  }
+
+  .service-card-container{
+   display: flex;
+   flex-direction: column;
+  }
+  .service-card-container div{
+    margin-top: 50px;
+  }
+
+  .how-it-works{
+    width: 100%;
+    height: 1500px;
+  }
+  .how-it-works-cardContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .testimonial{
+    width: 100%;
+  }
+  .testimonial-cardContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .news-cardContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .video{
+    width: 100%;
+  }
+  .video-purple{
+    position: absolute;
+    top: 8000px;
+    display: none;
+  }
+
+  .our-clients figure{
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  footer{
+    width: 100%;
+    padding: 20px;
+  }
+  .footer-top{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-bottom{
+    width: 100%;
+  }
+}
